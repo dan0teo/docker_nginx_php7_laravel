@@ -1,0 +1,4 @@
+/logs/app.access.log
+/logs/app.error.log
+/logs/error.log
+/logs/access.log
