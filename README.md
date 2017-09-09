@@ -3,7 +3,7 @@
 docker build -t apiimg .
 
 #### !Web application files should be placed into www folder!
-### !After container is running web server and php logs will be stored in logs directory!
+#### !After container is running web server and php logs will be stored in logs directory!
 
 #### Run container from image "apiimg": 
 docker run -d -p 80:80 -p 443:443 -v /FULL_PATH_TO_CURRENT_DIR/www:/var/www/app -v /FULL_PATH_TO_CURRENT_DIR/logs:/var/log/nginx  --name apisrv apiimg
