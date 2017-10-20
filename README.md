@@ -21,4 +21,12 @@ docker start apisrv
 #### Stop docker container:
 docker stop apisrv
 
+#### For joining several docker containers into one network you need to:
+
+##### 1) create network: 
+docker network create --subnet 10.10.10.0/24 net
+##### 2) connect containers: 
+docker network connect net apisrv
+docker network connect net frontsrv
+
 
