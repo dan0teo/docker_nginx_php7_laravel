@@ -27,6 +27,7 @@ docker stop apisrv
 docker network create --subnet 10.10.10.0/24 net
 ##### 2) connect containers: 
 docker network connect net apisrv
+
 docker network connect net frontsrv
 
 
