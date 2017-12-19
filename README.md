@@ -30,6 +30,4 @@ docker network create --subnet 10.10.10.0/24 net
 ##### 2) connect containers: 
 docker network connect net apisrv
 
-docker network connect net frontsrv
-
-
+docker network connect --ip 10.10.10.2 net phpsrv1
